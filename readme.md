@@ -105,7 +105,7 @@ sudo make install
 
 然后执行下面命令进行配置：
 ```
-./configure --with-linux-dir=/usr/src/linux-headers-3.14.44-xenomai-2.6.5 --with-module-dir=/lib/modules/3.14.44-xenomai-2.6.5 --enable-generic --enable-rtdm --with-xenomai-dir=/usr/xenomai --enable-cycles --enable-hrtimer --enable-8139too=no --enable-r8169=yes  --with-r8169-kernel=3.14 --prefix=/usr/local/etherlab
+./configure --with-linux-dir=/usr/src/linux-headers-4.9.51-xenomai-3.0.5-aufs --with-module-dir=/lib/modules/4.9.51-xenomai-3.0.5-aufs --enable-generic=no --enable-rtdm --with-xenomai-dir=/usr/xenomai --enable-cycles --enable-hrtimer --enable-8139too=no --enable-e1000e=yes  --with-e1000e-kernel=4.4 --prefix=/usr/local/etherlab
 ```
 ~~其中`/usr/src/linux-headers-4.4.0-28-generic`为你想把ethercat驱动编译在那个内核版本，你当前系统运行的内核版本可以通过`uname -a`命令检测到。~~
 
